@@ -1,0 +1,7 @@
+proyectos de otro curso:
+
+blog
+demo
+JavaFXCrud2022Sqlite
+peliculon
+primerspring

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>El Peliculón</title>
+</head>
+<body>
+    <h1>El peliculón by Cesur</h1>
+    <div th:each="pelicula:${cartelera}">
+
+        <a th:href=" '/pelicula/' + ${pelicula.id}">
+            <h2 th:text="${pelicula.titulo}"></h2>
+        </a>
+
+    </div>
+
+</body>
+</html>

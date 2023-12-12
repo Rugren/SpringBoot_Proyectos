@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi gran blog</title>
+</head>
+<body>
+    <h1>Estudio de la reproducción en cautividad del caracol serrano</h1>
+    <div th:each="noticia:${lista}">
+        <a th:href="'/entrada/' + ${noticia.id}" th:text="${noticia.titulo}"></a>
+        <p th:text="${noticia.contenido}"></p>
+    </div>
+</body>
+</html>
